@@ -4,108 +4,203 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Mart shop</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="container">
       <nav>
-        <div><a href="#">mart</a></div>
-        <ul>
-          <li><a href="#">Home </a></li>
-          <li><a href="#"> About Us</a></li>
-          <li><a href="#">page </a></li>
-          <li><a href="#">shop</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact us</a></li>
+        <div class="site-logo">
+          <h1 class="visualy-hidden">Mart online shop</h1>
+          <a href="index.html">mart</a>
+        </div>
+        <ul class="site-navigation">
+          <li class="site-navigation-item"><a href="#">Home </a></li>
+          <li class="site-navigation-item"><a href="#"> About Us</a></li>
+          <li class="site-navigation-item"><a href="#">page </a></li>
+          <li class="site-navigation-item"><a href="#">shop</a></li>
+          <li class="site-navigation-item"><a href="#">Blog</a></li>
+          <li class="site-navigation-item"><a href="#">Contact us</a></li>
         </ul>
       </nav>
-      <section class="slider">
-        <img src="images/slide4@1X.png" alt="" />
-        <p>AFFORDABLE PARIS TOURS CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
-        <button>Previous slide</button>
-        <button>Next slide</button>
-      </section>
     </header>
+    <section class="slider">
+      <h2 class="visualy-hidden">Slider section</h2>
+      <div class="overlay">
+        <div class="slider-btn container">
+          <button class="slider-btn-prev">
+            <span class="visualy-hidden">Previous slide</span>
+          </button>
+          <button class="slider-btn-next">
+            <span class="visualy-hidden">Next slide</span>
+          </button>
+        </div>
+        <p class="slider-item-description">
+          AFFORDABLE PARIS TOURS
+          <span>CITY TOURS / TOUR TICKETS / TOUR GUIDES</span>
+        </p>
+      </div>
+      <ul class="slider-list-image">
+        <li><img class="slider-image" src="images/slide4@1X.png" alt="" /></li>
+      </ul>
+    </section>
+
     <main>
-      <h1>Mart online shop</h1>
-      <section>
-        <h2>NEW COLLECTION</h2>
-        <ul>
-          <li>
+      <section class="container new-collection-section">
+        <h2 class="main-description">NEW COLLECTION</h2>
+        <ul class="catalog clearfix">
+          <li class="catalog-item">
+            <div class="item-overlay">
+              <ul class="card-button-list">
+                <li class="card-button-list-item">
+                  <button class="like-btn">
+                    <span class="visualy-hidden">Add to favorite</span>
+                  </button>
+                </li>
+                <li class="card-button-list-item">
+                  <button class="share-btn">
+                    <span class="visualy-hidden">Share to friends</span>
+                  </button>
+                </li>
+                <li class="card-button-list-item">
+                  <button class="time-btn">
+                    <span class="visualy-hidden">Time button</span>
+                  </button>
+                </li>
+                <li class="card-button-list-item">
+                  <button class="cart-btn"><span>Add to cart</span></button>
+                </li>
+              </ul>
+            </div>
             <a href="#">
               <img
-                src="images/card_img/man in blue tshirt.png"
+                class="catalog-item-img"
+                src="images/card_img/man_in_blue_tshirt.png"
                 alt="man in blue t-shurt"
                 width="331"
                 height="327"
               />
-              <p>Blue Tshirt</p>
-              <p>$26</p>
-              <div>
-                <button><span>Add to favrite</span></button>
-                <button><span>Share to friends</span></button>
-                <button><span>Time button</span></button>
-                <button><span>Add to cart</span></button>
-              </div>
+              <p class="catalog-item-description">Blue Tshirt</p>
+              <p class="catalog-item-price">$26</p>
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
+            <div class="item-overlay">
+              <ul class="card-button-list">
+                <li class="card-button-list-item">
+                  <button class="like-btn">
+                    <span class="visualy-hidden">Add to favorite</span>
+                  </button>
+                </li>
+                <li class="card-button-list-item">
+                  <button class="share-btn">
+                    <span class="visualy-hidden">Share to friends</span>
+                  </button>
+                </li>
+                <li class="card-button-list-item">
+                  <button class="time-btn">
+                    <span class="visualy-hidden">Time button</span>
+                  </button>
+                </li>
+                <li class="card-button-list-item">
+                  <button class="cart-btn"><span>Add to cart</span></button>
+                </li>
+              </ul>
+            </div>
             <a href="#">
               <img
-                src="images/card_img/woman in rose dress.png"
+                class="catalog-item-img"
+                src="images/card_img/woman_in_rose_dress.png"
                 alt="woman in rose dress"
                 width="331"
                 height="327"
               />
-              <p>WOMAN shirt</p>
-              <p>$31</p>
-              <div>
-                <button><span>Add to favrite</span></button>
-                <button><span>Share to friends</span></button>
-                <button><span>Time button</span></button>
-                <button><span>Add to cart</span></button>
-              </div></a
-            >
+              <p class="catalog-item-description">WOMAN shirt</p>
+              <p class="catalog-item-price">$31</p>
+            </a>
           </li>
-          <li>
+          <li class="catalog-item">
+            <div class="item-overlay">
+              <ul class="card-button-list">
+                <li class="card-button-list-item">
+                  <button class="like-btn">
+                    <span class="visualy-hidden">Add to favorite</span>
+                  </button>
+                </li>
+                <li class="card-button-list-item">
+                  <button class="share-btn">
+                    <span class="visualy-hidden">Share to friends</span>
+                  </button>
+                </li>
+                <li class="card-button-list-item">
+                  <button class="time-btn">
+                    <span class="visualy-hidden">Time button</span>
+                  </button>
+                </li>
+                <li class="card-button-list-item">
+                  <button class="cart-btn"><span>Add to cart</span></button>
+                </li>
+              </ul>
+            </div>
             <a href="#">
               <img
-                src="images/card_img/man in yelow t-shirt.png"
+                class="catalog-item-img"
+                src="images/card_img/man_in_yelow_tshirt.png"
                 alt="man in yelow t-shirt"
                 width="331"
                 height="327"
               />
-              <p>YELLOW Tshirt</p>
-              <p>$21</p>
-              <div>
-                <button><span>Add to favrite</span></button>
-                <button><span>Share to friends</span></button>
-                <button><span>Time button</span></button>
-                <button><span>Add to cart</span></button>
-              </div></a
-            >
+              <p class="catalog-item-description">YELLOW Tshirt</p>
+              <p class="catalog-item-price">$21</p>
+            </a>
           </li>
-          <li>
+          <li class="catalog-item">
+            <div class="item-overlay">
+              <ul class="card-button-list">
+                <li class="card-button-list-item">
+                  <button class="like-btn">
+                    <span class="visualy-hidden">Add to favorite</span>
+                  </button>
+                </li>
+                <li class="card-button-list-item">
+                  <button class="share-btn">
+                    <span class="visualy-hidden">Share to friends</span>
+                  </button>
+                </li>
+                <li class="card-button-list-item">
+                  <button class="time-btn">
+                    <span class="visualy-hidden">Time button</span>
+                  </button>
+                </li>
+                <li class="card-button-list-item">
+                  <button class="cart-btn"><span>Add to cart</span></button>
+                </li>
+              </ul>
+            </div>
             <a href="#">
               <img
-                src="images/card_img/woman in Cool lingerie.png"
+                class="catalog-item-img"
+                src="images/card_img/woman_in_Cool_lingerie.png"
                 alt="woman in Cool lingerie"
                 width="331"
                 height="327"
               />
-              <p>Cool lingerie</p>
-              <p>$56</p>
-              <div>
-                <button><span>Add to favrite</span></button>
-                <button><span>Share to friends</span></button>
-                <button><span>Time button</span></button>
-                <button><span>Add to cart</span></button>
-              </div></a
-            >
+              <p class="catalog-item-description">Cool lingerie</p>
+              <p class="catalog-item-price">$56</p>
+            </a>
           </li>
         </ul>
       </section>
     </main>
-    <footer>All Rights Reserved © Dokan | Designed ThemenGraph</footer>
+    <footer class="footer-info">
+      All Rights Reserved © Dokan | Designed <span>ThemenGraph</span>
+    </footer>
   </body>
 </html>
